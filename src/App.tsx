@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/rrr"> {/* 👈 FIXED */}
       <div className="min-h-screen bg-white">
         <Navbar />
         <Routes>
@@ -22,7 +22,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

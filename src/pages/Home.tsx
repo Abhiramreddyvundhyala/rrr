@@ -39,11 +39,11 @@ const Home = () => {
             <div className="flex justify-center">
           <div className="w-80 h-80 bg-white rounded-full flex items-center justify-center shadow-2xl">
             <div className="w-72 h-72 bg-gradient-to-br from-saffron-500 to-bjp-orange rounded-full flex items-center justify-center overflow-hidden">
-            <img 
-              src="/IMG_4049.jpg" 
-              alt="Profile or Symbol" 
-              className="w-full h-full object-cover rounded-full" 
-            />
+              <img 
+                src={`${import.meta.env.BASE_URL}IMG_4049.JPG`} 
+                alt="Profile or Symbol" 
+                className="w-full h-full object-cover rounded-full" 
+              />
             </div>
           </div>
         </div>
